@@ -56,13 +56,13 @@ def play_audio():
 def button_right_click():
     st.session_state.i-=1
     if st.session_state.i<0:
-        st.session_state.i=31
+        st.session_state.i=30
     # text1=st.write(data[st.session_state.i])
     write_text(data[st.session_state.i]["text"])
     
 def button_left_click():
     st.session_state.i+=1
-    if st.session_state.i>31:
+    if st.session_state.i>30:
         st.session_state.i=0
     # text1=st.write(data[st.session_state.i])
     write_text(data[st.session_state.i]["text"])
