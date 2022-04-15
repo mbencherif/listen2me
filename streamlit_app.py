@@ -46,7 +46,7 @@ def write_text(Text):
 
 def play_audio():
     k=data[st.session_state.i]["code"]
-    audio_file = open('CAPT_AUDIO_6G/sattam/'+str(k)+".ogg", 'rb')
+    audio_file = open('CAPT_AUDIOS_6G/sattam/'+str(k)+".ogg", 'rb')
     audio_bytes = audio_file.read()
     # st.write("k "+k)
     st.audio(audio_bytes, format='audio/ogg', start_time=0)
