@@ -12,7 +12,7 @@ The goal of this project is to present the right prununciation of some Arabic li
 First, install dependencies   
 ```bash
 # clone project   
-git clone https://github.com/mbencherif/capt-listen
+git clone https://github.com/mbencherif/listen2me
 
 # install project   
 cd capt-listen
@@ -21,7 +21,7 @@ pip install -r requirements.txt
  ```   
 ## How to run   
 ```bash
-cd capt-listen
+cd listen2me
 streamlit run main.py --server.port 8502
 ```
 
