@@ -16,7 +16,7 @@ https://www.i2symbol.com/symbols/arrows
 
 import json
 # Opening JSON file
-f = open('cs2r-97c92-SentencesV3-export.json')
+f = open('cs2r-97c92-SentencesV6Game-export.json')
 data = json.load(f)
 # for i in data:
 #     print(i["text"])
@@ -28,15 +28,15 @@ import streamlit as st
 # from annotated_text import annotated_text
 Next_Text=" التالي ➡ "
 Previous_Text= " ⬅ السابق"
-Title="مشروع تصحيح نطق اللغة العربية لغير الناطقين بها"
-st.markdown("<h1 style='font-family:traditional.ttf; text-align: center; color: blue; font-size:28px'>"+Title+"</h1>", unsafe_allow_html=True)
+Title="مشروع تصحيح نطق اللغة العربية للاطفال"
+st.markdown("<h1 style='font-family:traditional.ttf;text-align: center; color: red; font-size:25px'>"+Title+"</h1>", unsafe_allow_html=True)
 if 'i' not in st.session_state:
 	st.session_state.i = -1
 
 def write_text(Text):
     k=data[st.session_state.i]["code"]
     mylist_id=" : القائمة "+k
-    st.markdown("<h2 style='font-family:traditional; text-align: center; color: red; font-size: 22px;'>"+mylist_id+"</h2>", unsafe_allow_html=True)    
+    st.markdown("<h2 style='font-family:traditional.ttf; text-align: center; color: blue; font-size: 22px;'>"+mylist_id+"</h2>", unsafe_allow_html=True)    
     # annotate(Text)
     Text=Text.split("\n")
     for t in Text:
@@ -46,7 +46,7 @@ def write_text(Text):
 
 def play_audio():
     k=data[st.session_state.i]["code"]
-    audio_file = open('CAPT_AUDIONA3_SAMPLE/'+str(k)+".ogg", 'rb')
+    audio_file = open('CAPT_AUDIO_6G/sattam/'+str(k)+".ogg", 'rb')
     audio_bytes = audio_file.read()
     # st.write("k "+k)
     st.audio(audio_bytes, format='audio/ogg', start_time=0)
