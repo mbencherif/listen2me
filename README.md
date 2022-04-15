@@ -1,9 +1,9 @@
-### Website for capt waves listening
+### Website for the Arabic GAME listening
 - Built in setup.py
 - Built in requirements
 
 #### Goals  
-The goal of this project is to present the right prununciation of the Arabic lists. 
+The goal of this project is to present the right prununciation of some Arabic lists. 
 
 ## Description   
 
