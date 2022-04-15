@@ -12,7 +12,7 @@ The goal of this project is to present the right prununciation of some Arabic li
 First, install dependencies   
 ```bash
 # clone project   
-git clone https://github.com/mbencherif/listen2me
+git clone https://github.com/mbencherif/listen2me.git
 
 # install project   
 cd capt-listen
