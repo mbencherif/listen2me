@@ -83,7 +83,7 @@ Default_Speaker="ebrahim"
 
 def play_audio(Default_Speaker):
     k=data[st.session_state.i]["code"]
-    audio_file = open('CAPT_AUDIO_6G/'+Default_Speaker+'/'+str(k)+".ogg", 'rb')
+    audio_file = open('CAPT_AUDIOS_6G/'+Default_Speaker+'/'+str(k)+".ogg", 'rb')
     audio_bytes = audio_file.read()
     # st.write("k "+k)
     st.audio(audio_bytes, format='audio/ogg', start_time=0)
