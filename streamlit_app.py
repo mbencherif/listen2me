@@ -36,7 +36,7 @@ Title="مشروع تصحيح نطق اللغة العربية للاطفال"
 st.markdown(
     """
     <link href="//db.onlinewebfonts.com/c/6b75b24d502dab23003320c2e1b2fc68?family=Adobe+Arabic" rel="stylesheet" type="text/css"/>
-    <style> bdi1 {font-family: 'Adobe Arabic'; font-size:40px; color:red}</style>
+    <style> bdi1 {font-family: 'Adobe Arabic'; font-size:25px; color:red}</style>
     <h1><bdi1>"""+Title+"""</bdi1></h1>
     """,
     unsafe_allow_html=True,
