@@ -36,8 +36,8 @@ Title="مشروع تصحيح نطق اللغة العربية للاطفال"
 st.markdown(
     """
     <link href="//db.onlinewebfonts.com/c/6b75b24d502dab23003320c2e1b2fc68?family=Adobe+Arabic" rel="stylesheet" type="text/css"/>
-    <style> bdi1 {font-family: 'Adobe Arabic'; font-size:25px; color:red}</style>
-    <h1><bdi1>"""+Title+"""</bdi1></h1>
+    <style> bdi1 {font-family: 'Adobe Arabic';}</style>
+    <h1 style="font-size:25px; color:red;text-align:center;"><bdi1>"""+Title+"""</bdi1></h1>
     """,
     unsafe_allow_html=True,
 )
@@ -56,8 +56,8 @@ def write_text(Text):
     st.markdown(
         """
         <link href="//db.onlinewebfonts.com/c/6b75b24d502dab23003320c2e1b2fc68?family=Adobe+Arabic" rel="stylesheet" type="text/css"/>
-        <style> bdi2 {font-family: 'Adobe Arabic';color:green;}</style>
-        <h2 style="text-align: center";><bdi2>"""+mylist_id+"""</bdi2></h2>
+        <style> bdi2 {font-family: 'Adobe Arabic';}</style>
+        <h2 style="text-align:center;color:green;font-size:20px";><bdi2>"""+mylist_id+"""</bdi2></h2>
         """,
         unsafe_allow_html=True,
     )
@@ -72,7 +72,7 @@ def write_text(Text):
                 """
                 <link href="//db.onlinewebfonts.com/c/6b75b24d502dab23003320c2e1b2fc68?family=Adobe+Arabic" rel="stylesheet" type="text/css"/>
                 <style> bdi3 {font-family:'Adobe Arabic';style=color:blue;; }</style>
-                <h2 style="text-align: center; font-size: 40px";><bdi3>"""+t+"""</bdi3></h2>
+                <h2 style="text-align:center;font-size:20px";><bdi3>"""+t+"""</bdi3></h2>
                 """,
                 unsafe_allow_html=True,
             )
